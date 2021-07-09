@@ -22,14 +22,7 @@ let questions = [{
         "answer_4": "29.05.1996",
         "right_answer": 4
     },
-    {
-        "question": "Wann hat Anil Geburtstag?",
-        "answer_1": "29.05.1997",
-        "answer_2": "29.05.1995",
-        "answer_3": "29.05.1994",
-        "answer_4": "29.05.1996",
-        "right_answer": 4
-    }
+
 
 
 
@@ -96,7 +89,8 @@ function answer(selection) {
     let idOfRightAnswer = `answer_${question['right_answer']}`;
 
 
-    if (rightAnswerSelected(selectedQuestionNumber)) {
+    if (
+        selectedQuestionNumber == question['right_answer']) {
         console.log('Richtige Antwort!');
         document.getElementById(selection).parentNode.classList.add('bg-success');
         AUDIO_SUCCESS.play();

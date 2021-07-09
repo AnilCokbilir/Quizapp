@@ -4,9 +4,8 @@ body {
 
 .container {
     background-color: #007AFF !important;
-    min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -39,6 +38,8 @@ body {
 .card img {
     width: 100%;
     background-color: #007AFF;
+    height: 200px;
+    object-fit: cover;
 }
 
 .final-headline {
@@ -50,4 +51,24 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 24px;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+#answer_1 {
+    padding: 0.3rem 0.3rem;
+}
+
+#answer_2 {
+    padding: 0.3rem 0.3rem;
+}
+
+#answer_3 {
+    padding: 0.3rem 0.3rem;
+}
+
+#answer_4 {
+    padding: 0.3rem 0.3rem;
 }
